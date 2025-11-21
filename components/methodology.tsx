@@ -30,7 +30,6 @@ export default function Methodology() {
     t("methodology.personal.point2"),
     t("methodology.personal.point3"),
     t("methodology.personal.point4"),
-    t("methodology.personal.point5"),
   ]
 
   return (

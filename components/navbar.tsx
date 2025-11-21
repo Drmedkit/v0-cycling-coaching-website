@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslations } from "@/hooks/use-translations"
 import { useLanguage } from "@/components/language-provider"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, Globe } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function Navbar() {
@@ -59,7 +60,8 @@ export default function Navbar() {
     return (
       <header className="fixed top-0 left-0 right-0 z-50 bg-transparent py-4">
         <div className="container mx-auto flex items-center justify-between px-4">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/logo.png" alt="Tycho Coaching" width={120} height={60} className="h-8 w-auto md:h-10" />
             <span className="text-xl font-bold">
               <span className="text-white">Tycho</span>
               <span className="text-teal-500">Coaching</span>
@@ -78,7 +80,8 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/logo.png" alt="Tycho Coaching" width={120} height={60} className="h-8 w-auto md:h-10" />
           <span className="text-xl font-bold">
             <span className={scrolled ? "text-black" : "text-white"}>Tycho</span>
             <span className="text-teal-500">Coaching</span>
@@ -141,11 +144,11 @@ export default function Navbar() {
               size="sm"
               className="p-2 flex items-center gap-2 hover:bg-gray-100/10"
             >
-              <span className="text-lg">{currentLanguage?.flag}</span>
+              <Globe className={cn("h-4 w-4", scrolled ? "text-gray-700" : "text-white")} />
               <span className={cn("text-sm font-medium", scrolled ? "text-gray-700" : "text-white")}>
                 {currentLanguage?.code.toUpperCase()}
               </span>
-              <ChevronDown className="h-3 w-3 text-gray-400" />
+              <ChevronDown className={cn("h-3 w-3", scrolled ? "text-gray-400" : "text-white/70")} />
             </Button>
 
             {isLanguageDropdownOpen && (
@@ -159,7 +162,7 @@ export default function Navbar() {
                       language === lang.code ? "bg-gray-100" : "",
                     )}
                   >
-                    <span className="text-lg">{lang.flag}</span>
+                    <span className="text-lg w-6 text-center">{lang.flag}</span>
                     <span className="text-sm text-gray-700">{lang.name}</span>
                   </button>
                 ))}
@@ -182,8 +185,11 @@ export default function Navbar() {
               size="sm"
               className="p-2 flex items-center gap-1"
             >
-              <span className="text-lg">{currentLanguage?.flag}</span>
-              <ChevronDown className="h-3 w-3 text-gray-400" />
+              <Globe className={cn("h-4 w-4", scrolled ? "text-gray-700" : "text-white")} />
+              <span className={cn("text-sm font-medium", scrolled ? "text-gray-700" : "text-white")}>
+                {currentLanguage?.code.toUpperCase()}
+              </span>
+              <ChevronDown className={cn("h-3 w-3", scrolled ? "text-gray-400" : "text-white/70")} />
             </Button>
 
             {isLanguageDropdownOpen && (
@@ -197,7 +203,7 @@ export default function Navbar() {
                       language === lang.code ? "bg-gray-100" : "",
                     )}
                   >
-                    <span className="text-lg">{lang.flag}</span>
+                    <span className="text-lg w-6 text-center">{lang.flag}</span>
                     <span className="text-sm text-gray-700">{lang.name}</span>
                   </button>
                 ))}

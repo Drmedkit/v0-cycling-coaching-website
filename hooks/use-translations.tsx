@@ -54,9 +54,9 @@ const translations = {
     analysis: {
       title: { nl: "Analyseren van Trainingsdata", en: "Training Data Analysis", no: "Treningsdataanalyse" },
       description: {
-        nl: "Met behulp van TrainingPeaks en Intervals.icu analyseren we jouw vermogensdata, hartslag en andere prestatie-indicatoren voor optimale progressie.",
-        en: "Using TrainingPeaks and Intervals.icu, we analyze your power data, heart rate, and other performance indicators for optimal progression.",
-        no: "Ved hjelp av TrainingPeaks og Intervals.icu analyserer vi dine effektdata, puls og andre prestasjonsindikatorer for optimal progresjon.",
+        nl: "Met behulp van Intervals.ICU analyseren we jouw vermogensdata, hartslag en andere prestatie-indicatoren voor optimale progressie.",
+        en: "Using Intervals.ICU, we analyze your power data, heart rate, and other performance indicators for optimal progression.",
+        no: "Ved hjelp av Intervals.ICU analyserer vi dine effektdata, puls og andre prestasjonsindikatorer for optimal progresjon.",
       },
     },
     guidance: {
@@ -101,28 +101,26 @@ const translations = {
   coach: {
     title: { nl: "Maak kennis met je Coach", en: "Meet your Coach", no: "Møt Din Trener" },
     bio1: {
-      nl: "Mijn naam is Tycho Parmentier en ik ben een gepassioneerd wielercoach met een sterke wetenschappelijke achtergrond. In 2024 studeerde ik af als bewegingswetenschapper aan de Vrije Universiteit Amsterdam, met een specialisatie in inspanningsfysiologie. Tijdens mijn studie deed ik onderzoek naar efficiënte trainingsstrategieën voor amateurwielrenners.",
-      en: "My name is Tycho Parmentier and I am a passionate cycling coach with a strong scientific background. In 2024, I graduated as a movement scientist from VU Amsterdam, specializing in exercise Physiology. During my studies, I researched efficient training strategies for amateur cyclists.",
-      no: "Mitt navn er Tycho Parmentier og jeg er en lidenskapelig sykkeltrener med en sterk vitenskapelig bakgrunn. I 2024 tok jeg eksamen som bevegelsesvitenskap fra VU Amsterdam, med spesialisering i treningsfysiologi. Under studiene forsket jeg på effektive treningsstrategier for amatørsyklister.",
+      nl: "Ik help wielrenners van eerste toertocht tot UCI-koers – van jonge talenten en ambitieuze granfondo-rijders tot iedereen die fitter en gezonder wil worden. Niet meer “maar wat aanrommelen”, maar een persoonlijk trainingsplan op basis van wetenschappelijke kennis, datagedreven analyse en persoonlijke feedback.",
+      en: "I help cyclists from their first tour to UCI races – from young talents and ambitious gran fondo riders to anyone who wants to become fitter and healthier. No more 'just messing around', but a personal training plan based on scientific knowledge, data-driven analysis, and personal feedback.",
+      no: "Jeg hjelper syklister fra deres første turritt til UCI-ritt – fra unge talenter og ambisiøse granfondo-ryttere til alle som ønsker å bli sprekere og sunnere. Ikke mer 'bare rot', men en personlig treningsplan basert på vitenskapelig kunnskap, datadrevet analyse og personlig tilbakemelding.",
     },
     bio2: {
-      nl: "Momenteel ben ik bezig met een master in Cell- en Moleculaire Biologie in Trondheim, Noorwegen. Hiermee vergroot ik mijn inzicht in de fundamentele processen die prestaties en herstel beïnvloeden – van de werking van spieren op celniveau tot de impact van training op metabolisme.",
-      en: "Currently, I am pursuing a master's degree in Cell and Molecular Biology in Trondheim, Norway. This enhances my understanding of the fundamental processes that influence performance and recovery – from how muscles work at the cellular level to the impact of training on metabolism.",
-      no: "For øyeblikket tar jeg en mastergrad i celle- og molekylærbiologi i Trondheim, Norge. Dette øker min forståelse av de grunnleggende prosessene som påvirker prestasjon og restitusjon – fra hvordan muskler fungerer på cellenivå til treningens påvirkning på metabolismen.",
+      nl: "In 2024 studeerde ik af als bewegingswetenschapper aan de Vrije Universiteit Amsterdam, met een specialisatie in inspanningsfysiologie. Direct na mijn afstuderen ben ik als trainer aan de slag gegaan om wielrenners te begeleiden. Momenteel volg ik een master Cell- en Moleculaire Biologie aan de NTNU in Trondheim, waar ik onderzoek doe naar hoe spieren en mitochondriën zich aanpassen aan training. Die combinatie – van lab tot praktijk – vertaal ik naar heldere trainingsschema’s, herstelstrategieën en lange-termijnplanning.",
+      en: "In 2024, I graduated as a movement scientist from the Vrije Universiteit Amsterdam, specializing in exercise Physiology. Immediately after graduating, I started working as a trainer to guide cyclists. Currently, I am pursuing a master's in Cell and Molecular Biology at NTNU in Trondheim, where I research how muscles and mitochondria adapt to training. I translate that combination – from lab to practice – into clear training schedules, recovery strategies, and long-term planning.",
+      no: "I 2024 ble jeg uteksaminert som bevegelsesviter fra Vrije Universiteit Amsterdam, med spesialisering i treningsfysiologi. Rett etter utdanningen begynte jeg å jobbe som trener for å veilede syklister. For tiden tar jeg en mastergrad i celle- og molekylærbiologi ved NTNU i Trondheim, hvor jeg forsker på hvordan muskler og mitokondrier tilpasser seg trening. Den kombinasjonen – fra lab til praksis – oversetter jeg til klare treningsplaner, restitusjonsstrategier og langsiktig planlegging.",
     },
     bio3: {
-      nl: "Naast mijn academische achtergrond ben ik zelf een fanatiek amateurwielrenner op het hoogste niveau in Nederland. Ik heb deelgenomen aan een UCI-wedstrijd in Kameroen en werk aan het bereiken van het Noorse amateur/semi-prof niveau. Met mijn ervaring als atleet én wetenschapper help ik jou om slimmer, efficiënter en met maximale impact te trainen.",
-      en: "Besides my academic background, I am an avid amateur cyclist at the highest level in the Netherlands. I have participated in a UCI race in Cameroon and am working towards reaching the Norwegian amateur/semi-pro level. With my experience as both an athlete and scientist, I help you train smarter, more efficiently, and with maximum impact.",
-      no: "Ved siden av min akademiske bakgrunn er jeg selv en ivrig amatørsyklist på høyeste nivå i Nederland. Jeg har deltatt i et UCI-ritt i Kamerun og jobber mot å nå det norske amatør/semi-prof nivået. Med min erfaring som både utøver og vitenskapsmann hjelper jeg deg med å trene smartere, mer effektivt og med maksimal påvirkning.",
+      nl: "Aan het begin van mijn studententijd ben ik gaan wielrennen, na tal van andere duursporten. Elk jaar werd het serieuzer en ging het niveau omhoog, wat de afgelopen jaren onder andere heeft geleid tot internationale racen in Kameroen en Maleisië. Ik weet dus hoe het is om grote doelen te hebben, gestructureerd te trainen, het avontuur op te zoeken en dat allemaal te combineren met studie, werk en privé.",
+      en: "At the beginning of my student days, I started cycling, after numerous other endurance sports. Every year it became more serious and the level went up, which in recent years has led to international racing in Cameroon and Malaysia, among other places. So I know what it's like to have big goals, train structurally, seek adventure, and combine all that with study, work, and private life.",
+      no: "I begynnelsen av studietiden begynte jeg å sykle, etter mange andre utholdenhetsidretter. Hvert år ble det mer seriøst og nivået økte, noe som de siste årene blant annet har ført til internasjonale ritt i Kamerun og Malaysia. Så jeg vet hvordan det er å ha store mål, trene strukturert, søke eventyr og kombinere alt dette med studier, jobb og privatliv.",
     },
     bio4: {
-      nl: "Naast mijn eigen coachingplatform werk ik ook als freelance coach voor Cyclinglab.cc, een wetenschappelijk gebaseerd coaching collectief gericht op prestaties en data-gedreven training voor amateurs en elite wielrenners. Dit stelt mij in staat om verbonden te blijven met een coaching netwerk en mijn methodologieën te blijven verfijnen.",
-      en: "In addition to my own coaching platform, I also work as a freelance coach for Cyclinglab.cc, a science-based coaching collective focused on performance and data-driven training for amateurs and elite cyclists. This allows me to stay connected with a coaching network and continue refining my methodologies.",
-      no: "I tillegg til min egen treningsplattform jobber jeg også som frilanstrener for Cyclinglab.cc, et vitenskapsbasert trenerkollektiv fokusert på prestasjon og datadrevet trening for amatører og elitesyklister. Dette lar meg holde kontakten med et trenernettverk og fortsette å forfine metodikkene mine.",
+      nl: "Naast mijn eigen coachingplatform TychoCoaching werk ik als freelance coach bij Cyclinglab.cc, een wetenschappelijk georiënteerd wielerplatform. Daar spar ik met andere trainers en blijf ik mijn methodes aanscherpen – zodat jij profiteert van zowel de nieuwste inzichten als praktische ervaring op de fiets.",
+      en: "In addition to my own coaching platform TychoCoaching, I work as a freelance coach at Cyclinglab.cc, a scientifically oriented cycling platform. There I spar with other trainers and continue to sharpen my methods – so that you benefit from both the latest insights and practical experience on the bike.",
+      no: "I tillegg til min egen coachingplattform TychoCoaching, jobber jeg som frilanscoach hos Cyclinglab.cc, en vitenskapelig orientert sykkelplattform. Der sparrer jeg med andre trenere og fortsetter å spisse metodene mine – slik at du drar nytte av både den nyeste innsikten og praktisk erfaring på sykkelen.",
     },
     contactButton: { nl: "Neem Contact Op", en: "Contact Me", no: "Kontakt Meg" },
-    academic: { nl: "Academisch", en: "Academic", no: "Akademisk" },
-    academicSubtitle: { nl: "Onderbouwde Coaching", en: "Evidence-Based Coaching", no: "Evidensbasert Trening" },
   },
 
   // Methodology Section
@@ -181,29 +179,24 @@ const translations = {
         no: "Som bevegelsesvitenskap med spesialisering i treningsfysiologi tilpasser jeg disse vitenskapelige prinsippene til din unike fysiologi og mål. Hver plan er fullstendig personalisert, basert på:",
       },
       point1: {
-        nl: "Uitgebreide fitness assessment en bepaling van je trainingszones",
-        en: "Comprehensive fitness assessment and determination of your training zones",
-        no: "Omfattende kondisjonsvurdering og bestemmelse av treningssonene dine",
+        nl: "Trainingsschema afgestemd op jouw werk, studie, gezin en doelen",
+        en: "Training plan tailored to your work, study, family, and goals",
+        no: "Treningsplan tilpasset jobb, studier, familie og mål",
       },
       point2: {
-        nl: "Periodisering afgestemd op jouw doelevenementen",
-        en: "Periodization tailored to your target events",
-        no: "Periodisering tilpasset dine målarrangementer",
+        nl: "Regelmatige feedbackmomenten met ruimte voor vragen, twijfels en ideeën",
+        en: "Regular feedback moments with room for questions, doubts, and ideas",
+        no: "Regelmessige tilbakemeldinger med rom for spørsmål, tvil og ideer",
       },
       point3: {
-        nl: "Wekelijkse aanpassingen gebaseerd op trainingsdata en feedback",
-        en: "Weekly adjustments based on training data and feedback",
-        no: "Ukentlige justeringer basert på treningsdata og tilbakemelding",
+        nl: "Snel bijsturen bij ziekte, drukte of veranderende doelen",
+        en: "Quick adjustments for illness, busy schedules, or changing goals",
+        no: "Raske justeringer ved sykdom, travle perioder eller endrede mål",
       },
       point4: {
-        nl: "Integratie van herstel- en voedingsstrategieën",
-        en: "Integration of recovery and nutrition strategies",
-        no: "Integrering av restitusjons- og ernæringsstrategier",
-      },
-      point5: {
-        nl: "Technische en mentale coaching voor optimale prestaties",
-        en: "Technical and mental coaching for optimal performance",
-        no: "Teknisk og mental coaching for optimal prestasjon",
+        nl: "Coaching die verder gaat dan alleen watts: ook mentale voorbereiding, wedstrijdtactiek en herstel",
+        en: "Coaching that goes beyond just watts: also mental preparation, race tactics, and recovery",
+        no: "Coaching som går utover bare watt: også mental forberedelse, ritt-taktikk og restitusjon",
       },
     },
   },
@@ -307,9 +300,9 @@ const translations = {
         no: "4-ukers skreddersydd treningsprogram",
       },
       feature2: {
-        nl: "Gebruik van TrainingPeaks Basic",
-        en: "Use of TrainingPeaks Basic",
-        no: "Bruk av TrainingPeaks Basic",
+        nl: "Gebruik van Intervals.ICU",
+        en: "Use of Intervals.ICU",
+        no: "Bruk av Intervals.ICU",
       },
       feature3: {
         nl: "Maandelijks contactmoment (30 min)",
@@ -331,7 +324,7 @@ const translations = {
     // Premium package
     premium: {
       title: { nl: "Premium", en: "Premium", no: "Premium" },
-      price: "€90",
+      price: "€129",
       description: {
         nl: "Voor renners die serieus werk willen maken van hun training met regelmatige feedback en diepgaandere analyse.",
         en: "For riders who want to seriously work on their training with regular feedback and more in-depth analysis.",
@@ -343,14 +336,14 @@ const translations = {
         no: "Ukentlig oppdatert treningsprogram",
       },
       feature2: {
-        nl: "TrainingPeaks Premium inbegrepen",
-        en: "TrainingPeaks Premium included",
-        no: "TrainingPeaks Premium inkludert",
+        nl: "Intervals.ICU Premium inbegrepen",
+        en: "Intervals.ICU Premium included",
+        no: "Intervals.ICU Premium inkludert",
       },
       feature3: {
-        nl: "Jaarplan en periodisering",
-        en: "Annual plan and periodization",
-        no: "Årsplan og periodisering",
+        nl: "Gerichte voorbereiding op jouw belangrijkste wedstrijden en events",
+        en: "Targeted preparation for your most important races and events",
+        no: "Målrettet forberedelse til dine viktigste ritt og arrangementer",
       },
       feature4: {
         nl: "2x per week contact via whatsapp, mail en bellen",
@@ -358,20 +351,25 @@ const translations = {
         no: "2x ukentlig kontakt via WhatsApp, e-post og telefon",
       },
       feature5: {
-        nl: "Diepgaande analyse van vermogensdata",
-        en: "In-depth analysis of power data",
-        no: "Dybdegående analyse av effektdata",
+        nl: "Diepgaande analyse van vermogensdata (WKO5)",
+        en: "In-depth analysis of power data (WKO5)",
+        no: "Dybdegående analyse av effektdata (WKO5)",
+      },
+      feature6: {
+        nl: "Begeleiding op herstel, voeding en slaap",
+        en: "Guidance on recovery, nutrition, and sleep",
+        no: "Veiledning om restitusjon, ernæring og søvn",
       },
     },
 
     // Pro package
     pro: {
       title: { nl: "Pro", en: "Pro", no: "Pro" },
-      price: "€150",
+      price: "€209",
       description: {
-        nl: "Voor renners die het beste uit zichzelf willen halen en met een persoonlijke coach op hoog niveau willen werken.",
-        en: "For riders who want to get the best out of themselves and work with a personal coach at a high level.",
-        no: "For ryttere som ønsker å få det beste ut av seg selv og jobbe med en personlig trener på høyt nivå.",
+        nl: "Voor wedstrijdrenners die het beste uit zichzelf willen halen en met een persoonlijke coach op hoog niveau willen werken.",
+        en: "For competitive cyclists who want to get the best out of themselves and work with a personal coach at a high level.",
+        no: "For konkurranseryttere som ønsker å få det beste ut av seg selv og jobbe med en personlig trener på høyt nivå.",
       },
       feature1: {
         nl: "Volledig op maat gemaakt trainingsschema",
@@ -379,21 +377,26 @@ const translations = {
         no: "Fullstendig skreddersydd treningsprogram",
       },
       feature2: {
-        nl: "TrainingPeaks Premium inbegrepen",
-        en: "TrainingPeaks Premium included",
-        no: "TrainingPeaks Premium inkludert",
+        nl: "Intervals.ICU Premium inbegrepen",
+        en: "Intervals.ICU Premium included",
+        no: "Intervals.ICU Premium inkludert",
       },
       feature3: {
+        nl: "Gerichte voorbereiding op wedstrijden, trainingskampen, hitte adaptatie en hoogtestages",
+        en: "Targeted preparation for races, training camps, heat adaptation, and altitude training",
+        no: "Målrettet forberedelse til ritt, treningsleirer, varmetilpasning og høydetrening",
+      },
+      feature4: {
         nl: "Intensief contact via whatsapp, mail en bellen",
         en: "Intensive contact via WhatsApp, email and calls",
         no: "Intensiv kontakt via WhatsApp, e-post og telefon",
       },
-      feature4: {
+      feature5: {
         nl: "Diepgaande analyse van elke training",
         en: "In-depth analysis of each training",
         no: "Dybdegående analyse av hver treningsøkt",
       },
-      feature5: {
+      feature6: {
         nl: "Begeleiding op gebied van herstel, voeding en slaap",
         en: "Guidance on recovery, nutrition and sleep",
         no: "Veiledning innen restitusjon, ernæring og søvn",

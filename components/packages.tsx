@@ -50,6 +50,7 @@ export default function Packages() {
         { text: t("packages.premium.feature3"), included: true },
         { text: t("packages.premium.feature4"), included: true },
         { text: t("packages.premium.feature5"), included: true },
+        { text: t("packages.premium.feature6"), included: true }, // Added new feature for recovery guidance
       ],
       popular: true,
       buttonVariant: "default" as const,
@@ -65,6 +66,7 @@ export default function Packages() {
         { text: t("packages.pro.feature3"), included: true },
         { text: t("packages.pro.feature4"), included: true },
         { text: t("packages.pro.feature5"), included: true },
+        { text: t("packages.pro.feature6"), included: true },
       ],
       popular: false,
       buttonVariant: "outline" as const,
