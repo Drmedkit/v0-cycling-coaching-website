@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
       <header className="fixed top-0 left-0 right-0 z-50 bg-transparent py-4">
         <div className="container mx-auto flex items-center justify-between px-4">
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.png" alt="Tycho Coaching" width={120} height={60} className="h-8 w-auto md:h-10" />
             <span className="text-xl font-bold">
               <span className="text-white">Tycho</span>
@@ -80,7 +80,7 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.png" alt="Tycho Coaching" width={120} height={60} className="h-8 w-auto md:h-10" />
           <span className="text-xl font-bold">
             <span className={scrolled ? "text-black" : "text-white"}>Tycho</span>
