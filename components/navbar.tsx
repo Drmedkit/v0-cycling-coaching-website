@@ -91,42 +91,6 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link
-            href="#services"
-            className={cn(
-              "text-sm font-medium hover:text-teal-500 transition-colors",
-              scrolled ? "text-gray-700" : "text-white",
-            )}
-          >
-            {t("nav.services")}
-          </Link>
-          <Link
-            href="#methodology"
-            className={cn(
-              "text-sm font-medium hover:text-teal-500 transition-colors",
-              scrolled ? "text-gray-700" : "text-white",
-            )}
-          >
-            {t("nav.methodology")}
-          </Link>
-          <Link
-            href="#about"
-            className={cn(
-              "text-sm font-medium hover:text-teal-500 transition-colors",
-              scrolled ? "text-gray-700" : "text-white",
-            )}
-          >
-            {t("nav.about")}
-          </Link>
-          <Link
-            href="#experiences"
-            className={cn(
-              "text-sm font-medium hover:text-teal-500 transition-colors",
-              scrolled ? "text-gray-700" : "text-white",
-            )}
-          >
-            {t("nav.experiences")}
-          </Link>
-          <Link
             href="#contact"
             className={cn(
               "text-sm font-medium hover:text-teal-500 transition-colors",
@@ -221,34 +185,6 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="container mx-auto py-4 px-4 flex flex-col space-y-4">
-            <Link
-              href="#services"
-              className="text-sm font-medium hover:text-teal-500 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.services")}
-            </Link>
-            <Link
-              href="#methodology"
-              className="text-sm font-medium hover:text-teal-500 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.methodology")}
-            </Link>
-            <Link
-              href="#about"
-              className="text-sm font-medium hover:text-teal-500 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.about")}
-            </Link>
-            <Link
-              href="#experiences"
-              className="text-sm font-medium hover:text-teal-500 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.experiences")}
-            </Link>
             <Link
               href="#contact"
               className="text-sm font-medium hover:text-teal-500 transition-colors"

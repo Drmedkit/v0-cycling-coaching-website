@@ -45,7 +45,7 @@ export default function MeetCoach() {
           <div className="order-1 lg:order-2">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/images/coach-profile.jpeg"
+                src="/images/coach-profile.png"
                 alt="Tycho - Professional Cycling Coach"
                 width={600}
                 height={400}
