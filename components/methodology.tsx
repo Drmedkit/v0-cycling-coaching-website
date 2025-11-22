@@ -74,8 +74,8 @@ export default function Methodology() {
             <div className="hidden lg:block">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/cycling-race.jpeg"
-                  alt="Competitive cycling race showing professional training in action"
+                  src="/images/coach-profile.jpeg"
+                  alt="Tycho Parmentier in action"
                   width={600}
                   height={400}
                   className="object-cover w-full h-auto"
