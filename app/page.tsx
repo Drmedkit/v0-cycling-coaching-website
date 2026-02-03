@@ -4,7 +4,8 @@ import MeetCoach from "@/components/meet-coach"
 import Methodology from "@/components/methodology"
 import Testimonials from "@/components/testimonials"
 import Packages from "@/components/packages"
-import ContactForm from "@/components/contact-form"
+// import ContactForm from "@/components/contact-form" // Form code behouden maar niet gebruikt
+import ContactSection from "@/components/contact-section"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -18,7 +19,7 @@ export default function Home() {
       <Methodology />
       <Testimonials />
       <Packages />
-      <ContactForm />
+      <ContactSection />
       <Footer />
     </main>
   )
