@@ -61,7 +61,9 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-transparent py-4">
         <div className="container mx-auto flex items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="Tycho Coaching" width={120} height={60} className="h-8 w-auto md:h-10" />
+            <div className="h-9 w-9 md:h-11 md:w-11 rounded-full overflow-hidden border-2 border-teal-500 bg-white flex-shrink-0">
+              <Image src="/logo.png" alt="Tycho Coaching" width={44} height={44} className="h-full w-full object-cover" />
+            </div>
             <span className="text-xl font-bold">
               <span className="text-white">Tycho</span>
               <span className="text-teal-500">Coaching</span>
@@ -81,7 +83,9 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Tycho Coaching" width={120} height={60} className="h-8 w-auto md:h-10" />
+          <div className="h-9 w-9 md:h-11 md:w-11 rounded-full overflow-hidden border-2 border-teal-500 bg-white flex-shrink-0">
+            <Image src="/logo.png" alt="Tycho Coaching" width={44} height={44} className="h-full w-full object-cover" />
+          </div>
           <span className="text-xl font-bold">
             <span className={scrolled ? "text-black" : "text-white"}>Tycho</span>
             <span className="text-teal-500">Coaching</span>
