@@ -336,9 +336,9 @@ const translations = {
         no: "Ukentlig oppdatert treningsprogram",
       },
       feature2: {
-        nl: "Intervals.ICU Premium inbegrepen",
-        en: "Intervals.ICU Premium included",
-        no: "Intervals.ICU Premium inkludert",
+        nl: "Intervals.ICU & Trainingpeaks Premium inbegrepen",
+        en: "Intervals.ICU & Trainingpeaks Premium included",
+        no: "Intervals.ICU & Trainingpeaks Premium inkludert",
       },
       feature3: {
         nl: "Gerichte voorbereiding op jouw belangrijkste wedstrijden en events",
@@ -351,9 +351,9 @@ const translations = {
         no: "2x ukentlig kontakt via WhatsApp, e-post og telefon",
       },
       feature5: {
-        nl: "Diepgaande analyse van vermogensdata (WKO5)",
-        en: "In-depth analysis of power data (WKO5)",
-        no: "Dybdegående analyse av effektdata (WKO5)",
+        nl: "Diepgaande analyse van trainingsdata",
+        en: "In-depth analysis of training data",
+        no: "Dybdegående analyse av treningsdata",
       },
       feature6: {
         nl: "Begeleiding op herstel, voeding en slaap",
@@ -377,9 +377,9 @@ const translations = {
         no: "Fullstendig skreddersydd treningsprogram",
       },
       feature2: {
-        nl: "Intervals.ICU Premium inbegrepen",
-        en: "Intervals.ICU Premium included",
-        no: "Intervals.ICU Premium inkludert",
+        nl: "Intervals.ICU & Trainingpeaks Premium inbegrepen",
+        en: "Intervals.ICU & Trainingpeaks Premium included",
+        no: "Intervals.ICU & Trainingpeaks Premium inkludert",
       },
       feature3: {
         nl: "Gerichte voorbereiding op wedstrijden, trainingskampen, hitte adaptatie en hoogtestages",
@@ -392,9 +392,9 @@ const translations = {
         no: "Intensiv kontakt via WhatsApp, e-post og telefon",
       },
       feature5: {
-        nl: "Diepgaande analyse van elke training",
-        en: "In-depth analysis of each training",
-        no: "Dybdegående analyse av hver treningsøkt",
+        nl: "Diepgaande analyse van trainingsdata",
+        en: "In-depth analysis of training data",
+        no: "Dybdegående analyse av treningsdata",
       },
       feature6: {
         nl: "Begeleiding op gebied van herstel, voeding en slaap",
