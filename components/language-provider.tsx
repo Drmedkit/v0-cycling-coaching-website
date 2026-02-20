@@ -14,18 +14,32 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("nl")
+  const [language, setLanguage] = useState<Language>("en")
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    // Detect user's language preference
-    const userLang = navigator.language.split("-")[0]
-    if (userLang === "en") {
-      setLanguage("en")
-    } else if (userLang === "no" || userLang === "nb" || userLang === "nn") {
-      setLanguage("no")
+    // Detect language based on IP geolocation via Vercel headers
+    async function detectLanguage() {
+      try {
+        const res = await fetch("/api/geo")
+        if (res.ok) {
+          const data = await res.json()
+          if (data.language === "nl" || data.language === "no" || data.language === "en") {
+            setLanguage(data.language)
+          }
+        }
+      } catch {
+        // Fallback: use browser language if geo detection fails
+        const userLang = navigator.language.split("-")[0]
+        if (userLang === "nl") {
+          setLanguage("nl")
+        } else if (userLang === "no" || userLang === "nb" || userLang === "nn") {
+          setLanguage("no")
+        }
+      }
+      setIsLoaded(true)
     }
-    setIsLoaded(true)
+    detectLanguage()
   }, [])
 
   const value = {
