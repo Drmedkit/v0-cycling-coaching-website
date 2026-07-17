@@ -46,39 +46,43 @@ export function SiteHeader({ locale, labels, languageLabel, intake, menuLabels }
     <>
       <div className="site-header-wrap">
         <header className="site-header">
-          <Link aria-label="Tycho Coaching home" className="brand" href={localizedPath(locale)}>
-            <span className="brand-mark">
-              <Image alt="" height={42} priority src="/logo-mark.webp" width={42} />
-            </span>
-            <span>Tycho Coaching</span>
-          </Link>
-
-          <nav aria-label="Primary" className="desktop-nav">
-            {nav.map(([path, label]) => {
-              const href = localizedPath(locale, path)
-              const active = pathname === href || (path === "knowledge" && pathname.startsWith(`${href}/`))
-              return <Link aria-current={active ? "page" : undefined} className="nav-link" href={href} key={path}>{label}</Link>
-            })}
-          </nav>
-
-          <div className="header-actions">
-            <label className="sr-only" htmlFor="site-language">{languageLabel}</label>
-            <select
-              aria-label={languageLabel}
-              className="language-select"
-              id="site-language"
-              onChange={(event) => router.push(swapLocale(pathname, event.target.value as Locale))}
-              value={locale}
-            >
-              {locales.map((item) => <option key={item} value={item}>{localeNames[item]}</option>)}
-            </select>
-            <Link className="button-primary header-cta" href={localizedPath(locale, "contact")}>
-              <span>{intake}</span>
-              <span className="button-glyph"><ArrowRight /></span>
+          <div className="header-brand-island">
+            <Link aria-label="Tycho Coaching home" className="brand" href={localizedPath(locale)}>
+              <span className="brand-mark">
+                <Image alt="" height={42} priority src="/logo-mark.webp" width={42} />
+              </span>
+              <span>Tycho Coaching</span>
             </Link>
-            <button aria-expanded={open} aria-label={open ? menuLabels.close : menuLabels.open} className="menu-toggle" onClick={() => setOpen((value) => !value)} type="button">
-              <MenuIcon open={open} />
-            </button>
+          </div>
+
+          <div className="header-command-island">
+            <nav aria-label="Primary" className="desktop-nav">
+              {nav.map(([path, label]) => {
+                const href = localizedPath(locale, path)
+                const active = pathname === href || (path === "knowledge" && pathname.startsWith(`${href}/`))
+                return <Link aria-current={active ? "page" : undefined} className="nav-link" href={href} key={path}>{label}</Link>
+              })}
+            </nav>
+
+            <div className="header-actions">
+              <label className="sr-only" htmlFor="site-language">{languageLabel}</label>
+              <select
+                aria-label={languageLabel}
+                className="language-select"
+                id="site-language"
+                onChange={(event) => router.push(swapLocale(pathname, event.target.value as Locale))}
+                value={locale}
+              >
+                {locales.map((item) => <option key={item} value={item}>{localeNames[item]}</option>)}
+              </select>
+              <Link className="button-primary header-cta" href={localizedPath(locale, "contact")}>
+                <span>{intake}</span>
+                <span className="button-glyph"><ArrowRight /></span>
+              </Link>
+              <button aria-expanded={open} aria-label={open ? menuLabels.close : menuLabels.open} className="menu-toggle" onClick={() => setOpen((value) => !value)} type="button">
+                <MenuIcon open={open} />
+              </button>
+            </div>
           </div>
         </header>
       </div>

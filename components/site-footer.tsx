@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { ButtonLink } from "@/components/button-link"
 import type { Locale } from "@/lib/i18n"
 import { localizedPath } from "@/lib/i18n"
 import type { getCopy } from "@/lib/copy"
@@ -17,8 +18,9 @@ export function SiteFooter({ locale, copy }: { locale: Locale; copy: Copy }) {
             <span>Tycho Coaching</span>
           </Link>
           <p>{copy.footer.statement}</p>
+          <ButtonLink href={localizedPath(locale, "contact")} variant="inverse">{copy.common.intake}</ButtonLink>
         </div>
-        <div>
+        <nav aria-label={copy.footer.explore} className="footer-navigation">
           <h2 className="footer-heading">{copy.footer.explore}</h2>
           <ul className="footer-links">
             <li><Link href={localizedPath(locale, "coaching")}>{copy.nav.coaching}</Link></li>
@@ -27,8 +29,8 @@ export function SiteFooter({ locale, copy }: { locale: Locale; copy: Copy }) {
             <li><Link href={localizedPath(locale, "knowledge")}>{copy.nav.knowledge}</Link></li>
             <li><Link href={localizedPath(locale, "packages")}>{copy.nav.packages}</Link></li>
           </ul>
-        </div>
-        <div>
+        </nav>
+        <div className="footer-contact">
           <h2 className="footer-heading">{copy.footer.contact}</h2>
           <ul className="footer-links">
             <li><Link href={localizedPath(locale, "contact")}>{copy.nav.contact}</Link></li>
@@ -36,15 +38,14 @@ export function SiteFooter({ locale, copy }: { locale: Locale; copy: Copy }) {
             <li><a href={`tel:${site.phoneHref}`}>{site.phoneDisplay}</a></li>
             <li>{site.location}</li>
           </ul>
-        </div>
-        <div>
-          <h2 className="footer-heading">{copy.footer.legal}</h2>
-          <ul className="footer-links">
+          <h2 className="footer-heading footer-legal-heading">{copy.footer.legal}</h2>
+          <ul className="footer-legal-links">
             <li><Link href={localizedPath(locale, "privacy")}>{copy.pages.privacy.eyebrow}</Link></li>
             <li><Link href={localizedPath(locale, "terms")}>{copy.nav.faq === "FAQ" ? "Terms" : copy.pages.terms.eyebrow.split(" · ")[0]}</Link></li>
             <li><Link href={localizedPath(locale, "faq")}>{copy.nav.faq}</Link></li>
           </ul>
         </div>
+        <div aria-hidden="true" className="footer-wordmark">TYCHO</div>
       </div>
       <div className="section-shell footer-bottom">
         <span>© {new Date().getFullYear()} Tycho Coaching. {copy.footer.rights}</span>

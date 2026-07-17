@@ -54,7 +54,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
         </div>
       </header>
       <article className="prose-shell"><MDXRemote source={article.content} /></article>
-      {related.length > 0 && <section className="section-shell section-space"><p className="eyebrow">{copy.knowledge.all}</p><div className="article-grid">{related.map((item) => <ArticleCard article={item} key={item.slug} locale={locale} minuteLabel={copy.common.minutes} readLabel={copy.common.readArticle} />)}</div><Link className="text-link" href={localizedPath(locale, "knowledge")} style={{ marginTop: "2rem" }}>{copy.common.viewAll}<ArrowRight /></Link></section>}
+      {related.length > 0 && <section className="section-shell section-space"><p className="eyebrow">{copy.knowledge.all}</p><div className="article-grid">{related.map((item, index) => <ArticleCard article={item} index={index + 1} key={item.slug} locale={locale} minuteLabel={copy.common.minutes} readLabel={copy.common.readArticle} />)}</div><Link className="text-link related-all-link" href={localizedPath(locale, "knowledge")}>{copy.common.viewAll}<ArrowRight /></Link></section>}
       <FinalCta copy={copy} locale={locale} />
       <JsonLd data={schema} />
     </main>

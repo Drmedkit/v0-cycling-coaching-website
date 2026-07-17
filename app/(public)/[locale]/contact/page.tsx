@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Clock } from "@/components/icons"
 import { IntakeForm } from "@/components/intake-form"
@@ -21,10 +22,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   const locale = value
   const copy = getCopy(locale)
   return (
-    <main id="main-content" style={{ background: "var(--cream)" }}>
-      <section className="section-shell section-space" style={{ paddingTop: "clamp(10rem, 15vw, 14rem)" }}>
+    <main className="contact-page" id="main-content">
+      <section className="section-shell section-space contact-section">
         <div className="contact-layout">
-          <aside className="contact-aside"><p className="eyebrow">{copy.contact.eyebrow}</p><h1>{copy.contact.title}</h1><p>{copy.contact.lead}</p><div className="response-note"><Clock />{copy.contact.response}</div></aside>
+          <aside className="contact-aside"><p className="eyebrow">{copy.contact.eyebrow}</p><h1>{copy.contact.title}</h1><p>{copy.contact.lead}</p><div className="response-note"><Clock />{copy.contact.response}</div><div className="contact-photo"><Image alt="Tycho Parmentier, cycling coach" fill priority sizes="(max-width: 760px) 100vw, 34vw" src="/images/coach-profile.webp" style={{ objectFit: "cover", objectPosition: "center 22%" }} /></div></aside>
           <IntakeForm copy={copy.contact} locale={locale} />
         </div>
       </section>

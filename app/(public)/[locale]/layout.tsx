@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Archivo, Manrope } from "next/font/google"
+import { Bricolage_Grotesque, Manrope } from "next/font/google"
 import { notFound } from "next/navigation"
 import type { ReactNode } from "react"
 import "@/app/globals.css"
@@ -12,7 +12,7 @@ import { getCopy } from "@/lib/copy"
 import { isLocale, locales } from "@/lib/i18n"
 import { site } from "@/lib/site"
 
-const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap" })
+const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display", display: "swap" })
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" })
 
 export const metadata: Metadata = {
@@ -65,7 +65,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   ]
 
   return (
-    <html className={`${archivo.variable} ${manrope.variable}`} lang={locale}>
+    <html className={`${display.variable} ${manrope.variable}`} lang={locale}>
       <body>
         <a className="skip-link" href="#main-content">{copy.skip}</a>
         <SiteHeader intake={copy.common.intake} labels={copy.nav} languageLabel={copy.languageLabel} locale={locale} menuLabels={{ open: copy.common.openMenu, close: copy.common.closeMenu }} />
