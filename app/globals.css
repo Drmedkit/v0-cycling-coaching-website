@@ -257,6 +257,28 @@ img {
   pointer-events: none;
 }
 
+/* Private field-manual concept: the route supplies its own complete shell. */
+html:has(.concept-page) {
+  background: #0c2b33;
+  scroll-behavior: smooth;
+}
+
+body:has(.concept-page) > .site-header-wrap,
+body:has(.concept-page) > .mobile-panel,
+body:has(.concept-page) > .site-footer {
+  display: none;
+}
+
+body:has(.concept-page) > .skip-link {
+  z-index: 130;
+}
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  html:has(.concept-page) {
+    scroll-behavior: auto;
+  }
+}
+
 .site-header {
   display: flex;
   width: min(100% - 2rem, 1440px);

@@ -83,3 +83,32 @@ test("crawler endpoints are available", async ({ request }) => {
   expect(sitemap.ok()).toBeTruthy()
   expect(await sitemap.text()).toContain("/no/knowledge/critical-power-vs-ftp")
 })
+
+test("field manual concept stays private and accessible", async ({ page, request }) => {
+  await page.goto("/en/concept")
+  await expect(page.getByRole("heading", { name: "Turn your ambition into better days on the bike." })).toBeVisible()
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/)
+
+  const indexToggle = page.getByRole("button", { name: "Open site index" })
+  await indexToggle.click()
+  await expect(page.getByRole("button", { name: "Close site index" })).toHaveAttribute("aria-expanded", "true")
+  await expect(page.getByRole("navigation", { name: "Concept site index" })).toBeVisible()
+  await page.keyboard.press("Escape")
+  await expect(page.getByRole("button", { name: "Open site index" })).toBeFocused()
+
+  const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze()
+  expect(results.violations.filter((violation) => ["critical", "serious"].includes(violation.impact ?? ""))).toEqual([])
+
+  const sitemap = await request.get("/sitemap.xml")
+  expect(await sitemap.text()).not.toContain("/en/concept")
+  expect((await request.get("/nl/concept")).status()).toBe(404)
+})
+
+test("field manual concept has a reduced-motion reading mode", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" })
+  await page.goto("/en/concept")
+  await expect(page.locator('article[data-step="0"]')).toBeVisible()
+  await expect(page.locator('article[data-step="1"]')).toBeVisible()
+  await expect(page.locator('article[data-step="2"]')).toBeVisible()
+  await expect(page.locator('article[data-step="1"] img')).toBeVisible()
+})
